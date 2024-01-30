@@ -16,7 +16,7 @@
         <div class="row" style="margin-top: 45px">
             <div class="col-md-6 offset-md-3">
                 <h4>World Countries</h4>
-                <button type="button" class="btn btn-outline-primary btn-sm">Add New Country</button>
+                
                 @livewire('countries')
 
             </div>

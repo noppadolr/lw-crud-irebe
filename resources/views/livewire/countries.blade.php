@@ -1,4 +1,5 @@
 <div>
+    <button type="button" wire:click='OpenAddCountryModal()' class="btn btn-outline-primary btn-sm">Add New Country</button>
     <table class="table  table-hover table-responsive">
         <thead class="thead-inverse">
         <tr>
@@ -16,4 +17,19 @@
         </tbody>
 
     </table>
+
+    @include('modals.add-modal')
 </div>
+<script>
+    document.addEventListener('livewire:initialized',()=>{
+            @this.on('OpenAddCountryModal',(event)=>{
+                $('.addCountry').modal('show');
+                
+            })
+
+
+
+
+            // @this.on(OpenAddCountryModal,(event)=>{})
+    })
+</script>
